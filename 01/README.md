@@ -2,32 +2,14 @@
 
 &nbsp;
 
-# `#01` PHP: JavaScript, The DOM
+# `#01` PHP: JavaScript, The API
 
 
-W pliku `./app.js` znajdziesz obiekt, który określa ustawienia dla `buttona`:
+W pliku `app.js` masz przygotowany kod, który ustawia kolor obramowania dla wyszukanych `divów`.
 
-```
-const buttonSettings = {
-    attr: {
-        className: 'btn',
-        title: 'super button'
-    },
-    css: {
-        border: '1px solid #336699',
-        padding: '5px 20px',
-        color: '#444'
-    },
-    text: 'Click me!',
-}
-```
+Niestety kod ten posiada zagnieżdżenia, co zmniejsza jego czytelność i może doprowadzić do efektu *[callback hell](http://callbackhell.com/)*.
 
-Utwórz element `<button/>`, który:
-- zgodnie z powyższymi wytycznymi będzie posiadał odpowiednie atrybuty, style i tekst; do stworzenia tego obiektu (elementu HTML) spróbuj wykorzystać pętlę, np.  [for...in](https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Polecenia/for...in),
-- zostanie wstawiony do elementu o klasie `.parent-for-button` przy pomocy JavaScriptu.
-
-Pamiętaj, aby ten przycisk był widoczny na stronie.
-
+Twoim zadaniem jest przebudowanie kodu w taki sposób, aby zagnieżdzenia nie występowały. Utwórz odpowiednie funkcje, które rozwiążą ten problem.
 
 
 &nbsp;

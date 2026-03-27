@@ -2,31 +2,15 @@
 
 &nbsp;
 
-# `#02` PHP: JavaScript, The DOM
+# `#02` PHP: JavaScript, The API
 
-Utwórz poniższą strukturę menu za pomocą JS:
+U pliku `app.js` ponownie masz przygotowany kod, który ustawia kolor obramowania dla wyszukanych `divów`. Tym razem jest on zabezpieczony przed podaniem nieprawidłowego elementu czy przed brakiem *callbacka*.
 
-```
-<ul>
-    <li><a href="/">start</a></li>
-    <li><a href="/gallery">galeria</a></li>
-    <li><a href="/contact">kontakt</a></li>
-</ul>
-```
+Twoim zadaniem jest przebudowanie funkcji `setBorderColorAsync()` w taki sposób, aby realizowała swoje dotychczasowe zadanie przy pomocy obietnic (`Promise`), tj. powinna zwracać obiekt utworzony przy pomocy `new Promise( (resolve, reject) => ...)`;
 
-Całość wstaw do elementu `<nav/>`.
+Pamiętaj, że `resolve` to funkcja, która jest uruchamiana w przypadku powodzenia, natomiast `reject` – w przypadku, gdy coś jest nie tak.
 
-Początkowo spróbuj wykonać to zadanie bez wykorzystania poniższej struktury:
-
-```
-const menuItems = [
-    {text: 'start', url: '/'},
-    {text: 'galeria', url: '/gallery'},
-    {text: 'kontakt', url: '/contact'},
-]
-```
-
-Następnie zrób to samo, ale używając danych wraz z np. [forEach](https://developer.mozilla.org/pl/docs/Web/JavaScript/Referencje/Obiekty/Array/forEach).
+Po wprowadzeniu zmian musisz również zmienić wykorzystanie tej funkcji zgodnie z jej obecną implementacją. Pamiętaj, że `.then` może być wykorzystane wielokrotnie.
 
 
 
