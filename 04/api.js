@@ -1,1 +1,1 @@
-export const key = 'secret-key';
+export const key = '185bf07143bb4c21855cdc9bcad65a2a';

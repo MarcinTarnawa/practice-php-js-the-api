@@ -41,8 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!resp.ok) throw new Error('Problem z kluczem lub API');
                 return resp.json();
             })
-            .then(data => {
-                const actualData = data.data[0]; 
+            .then(appResponse => {
+                // const actualData = data.data[0];
+                const { data: [actualData] } = appResponse;
 
                 weatherLat.innerText = actualData.lat;
                 weatherLng.innerText = actualData.lon;
